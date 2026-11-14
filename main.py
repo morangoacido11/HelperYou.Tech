@@ -1,4 +1,6 @@
 #Cadastro e Matriz por: Ana Gabriely 
+import time
+import random
 helperyou = {
     "nome":"helperyou.tech",
     "versao":"0.0.1",
@@ -55,9 +57,25 @@ def menu2():
         print("[3] Sair.")
         print("="*30)
         while True:
-            opcao = input("Selecione apenas uma das opções acima (1,2, ou 3!:")
+            opcao = input("Selecione apenas uma das opções acima (1,2, ou 3!:").strip()
             if opcao == "1" and opcao == "2"  and opcao == "3":
                 break
             else:
                 print("Selecione apenas o que se pede! \n[Erro: Caractere invalido!]")
-                
+            if opcao == "3":
+                print("\nObrigada por utilizar a HelperYou! Até logo!")
+                break
+            if opcao == "1":
+                print("="*30)
+                print("Seja bem-vindo!")
+                print("="*30)
+                print("Realizaremos o cadastro da sua empresa agora mesmo!")
+                print("="*30)
+                while True:
+                    numerodecadastro = random.randit(100,999999)
+                    emailempresa = input ("> Insira o email empresarial: ").strip()
+                    nomeadaempresa = input("> Nomeie sua empresa: ").strip()
+                    codigo_empresa = input("> Crie um codigo: ").strip()
+                    senha_empresa = input("> Crie uma senha: ").strip()
+
+                    if
