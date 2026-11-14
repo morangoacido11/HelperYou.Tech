@@ -33,7 +33,8 @@ newfuncionario = input("Coloque seu nome para o cadastro: ")
 while True:
     if newfuncionario != "":
         print(f"Funcionário{newfuncionario} cadastrado com sucesso!")
-        return funcionarios + [newfuncionario]
+        funcionarios.append(newfuncionario)
+        break
     else:
         print("Por favor, coloque caracteres e/ou nomes válidos!")
         newfuncionario = input("Coloque seu nome para o cadastro: ")
