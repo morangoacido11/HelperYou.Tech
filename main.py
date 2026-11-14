@@ -90,4 +90,28 @@ def menu2():
                         print(f"> Dados da Empresa [{dadosempresa}] <")
                         print("")
                         time.sleep(2)
-                        
+                        break
+
+                    else:
+                        print("")
+                        print("== Algo deu errado ! ==")
+                        print("")
+            elif opcao == "2":
+                if nomeadaempresa == "":
+                    print("\n[Erro: Nenhuma empresa cadastrada no momento!]")
+                    print("\nRealize o cadastro na opção [1] primeiro.")
+                    time.sleep(2)
+                    continue
+
+                while True:
+                    print("="*20)
+                    print("\n>Seja bem-vindo novamente! \n>Realize a verificação de 3 etapas.")
+                    print("")
+                    print("="*20)
+                    helperyoucode = "helpertech123"
+                    numerodecadastro2 = random.randint(100,999999)
+                    codigo_empresa2 = input(" > Insira seu código: ")
+                    senha_empresa2 = input(" > Insira sua senha: ")
+
+                    verificacao_helperyou = input(f"> Enviamos um código para o email [{emailempresa}.\n> Coloque-o: ]")
+                    if codigo_empresa
