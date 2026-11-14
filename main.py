@@ -49,7 +49,7 @@ def menu2():
         print("Olá, antes de começar")
         print("gostaria que respondesse com uma das opções: ")
         print("")
-        oprint("==LEMBRETE== \n> Você não tem nenhum cadastro em nossa plataforma.\n é recomendado o uso da opção [1].")
+        print("==LEMBRETE== \n> Você não tem nenhum cadastro em nossa plataforma.\n é recomendado o uso da opção [1].")
         print("[1] Primeira vez usando a HelperYou.")
         print("[2] Faço parte da HelperYou.")
         print("[3] Sair.")
