@@ -54,3 +54,10 @@ def menu2():
         print("[2] Faço parte da HelperYou.")
         print("[3] Sair.")
         print("="*30)
+        while True:
+            opcao = input("Selecione apenas uma das opções acima (1,2, ou 3!:")
+            if opcao == "1" and opcao == "2"  and opcao == "3":
+                break
+            else:
+                print("Selecione apenas o que se pede! \n[Erro: Caractere invalido!]")
+                
