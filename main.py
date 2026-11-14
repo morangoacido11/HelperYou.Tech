@@ -31,12 +31,12 @@ for nome in funcionarios:
     print(f"==>{nome}")
 newfuncionario = input("Coloque seu nome para o cadastro: ")
 while True:
-if newfuncionario != "":
-    print(f"Funcionário{newfuncionario} cadastrado com sucesso!")
-    return funcionarios + [newfuncionario]
-else:
-    print("Por favor, coloque caracteres e/ou nomes válidos!")
-    newfuncionario = input("Coloque seu nome para o cadastro: ")
+    if newfuncionario != "":
+        print(f"Funcionário{newfuncionario} cadastrado com sucesso!")
+        return funcionarios + [newfuncionario]
+    else:
+        print("Por favor, coloque caracteres e/ou nomes válidos!")
+        newfuncionario = input("Coloque seu nome para o cadastro: ")
 
 def menu2():
     nomedaempresa = ""
