@@ -114,4 +114,14 @@ def menu2():
                     senha_empresa2 = input(" > Insira sua senha: ")
 
                     verificacao_helperyou = input(f"> Enviamos um código para o email [{emailempresa}.\n> Coloque-o: ]")
-                    if codigo_empresa
+                    if codigo_empresa2 == codigo_empresa and senha_empresa2 == senha_empresa and verificacao_helperyou == helperyoucode:
+                        print("Procurando...")
+                        time.sleep(2)
+                        print("")
+                        print(f"= Empresa [{nomedaempresa}] encontrada!")
+                        time.sleep(1)
+                        print(f"= Numero de cadastro [{numerodecadastro2}]")
+                        time.sleep(3)
+                        print("== Registro realizado com sucesso ==")
+                        time.sleep(1)
+                        break
