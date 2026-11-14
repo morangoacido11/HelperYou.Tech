@@ -125,3 +125,4 @@ def menu2():
                         print("== Registro realizado com sucesso ==")
                         time.sleep(1)
                         break
+            #Menu por Maria Eduarda Pellegrini
