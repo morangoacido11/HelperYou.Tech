@@ -9,15 +9,15 @@ helperyou = {
 funcionarios = ["Jose Cardoso","Julia Lima"]
 username = ["josecardoso98","julialima23"]
 setores = [
-    [0,0,0], #Porta A
-    [1,2,2], #Porta B
+    [1,1,1], #Porta A
+    [0,2,2], #Porta B
 ]
 
 def mostrarsetores(setores):
     print("="*30)
     print("SETORES (SEGUROS) DISPONIVEIS")
-    print("-- Livres = 0 --")
-    print("-- Bloqueados = 1 --")
+    print("-- Livres e seguros = 1 --")
+    print("-- Bloqueados(uso-não-recomendado) = 0 --")
     print("-- Em uso = 2 --")
     print("="*30)
     print(f"{setores[0]}")
@@ -25,12 +25,31 @@ def mostrarsetores(setores):
 
 def menu1():
     print("="*30)
-print("--- Cadastros de Funcionários ---")
+    print("--- Cadastros de Funcionários ---")
+    print("== Funcionários Cadastrados ===")
 for nome in funcionarios:
     print(f"==>{nome}")
 newfuncionario = input("Coloque seu nome para o cadastro: ")
-
+while True:
 if newfuncionario != "":
-    funcionarios = funcionarios + [newfuncionario]
-    print(f"Bem-vindo(a),{newfuncionario},seu cadastro foi realizado com sucesso!")
+    print(f"Funcionário{newfuncionario} cadastrado com sucesso!")
+    return funcionarios + [newfuncionario]
+else:
+    print("Por favor, coloque caracteres e/ou nomes válidos!")
+    newfuncionario = input("Coloque seu nome para o cadastro: ")
 
+def menu2():
+    nomedaempresa = ""
+    codigo_empresa =""
+    senha_empresa = ""
+    while True:
+        print("="*30)
+        print("")
+        print("Olá, antes de começar")
+        print("gostaria que respondesse com uma das opções: ")
+        print("")
+        oprint("==LEMBRETE== \n> Você não tem nenhum cadastro em nossa plataforma.\n é recomendado o uso da opção [1].")
+        print("[1] Primeira vez usando a HelperYou.")
+        print("[2] Faço parte da HelperYou.")
+        print("[3] Sair.")
+        print("="*30)
