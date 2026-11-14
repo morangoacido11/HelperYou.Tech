@@ -83,3 +83,11 @@ def menu2():
                             'nome da empresa > ': nomeadaempresa,
                             'senha >': senha_empresa
                         }
+                        print("")
+                        print(f"==Empresa [{nomeadaempresa}] Cadastrada com Sucesso.==")
+                        print(f"== Numero de Cadastro [{numerodecadastro}] ==")
+                        print("")
+                        print(f"> Dados da Empresa [{dadosempresa}] <")
+                        print("")
+                        time.sleep(2)
+                        
