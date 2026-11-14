@@ -78,4 +78,8 @@ def menu2():
                     codigo_empresa = input("> Crie um codigo: ").strip()
                     senha_empresa = input("> Crie uma senha: ").strip()
 
-                    if
+                    if nomedaempresa != "" and codigo_empresa !="" and emailempresa !="" and senha_empresa !="":
+                        dadosempresa = {
+                            'nome da empresa > ': nomeadaempresa,
+                            'senha >': senha_empresa
+                        }
